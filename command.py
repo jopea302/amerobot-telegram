@@ -65,7 +65,7 @@ def tip(bot,update):
 			bot.send_message(chat_id=update.message.chat_id, text="Error that user is not applicable.")
 
 def balance(bot,update):
-	quote_page = requests.get('https://www.worldcoinindex.com/coin/reddcoin')
+	quote_page = requests.get('')
 	strainer = SoupStrainer('div', attrs={'class': 'row mob-coin-table'})
 	soup = BeautifulSoup(quote_page.content, 'html.parser', parse_only=strainer)
 	name_box = soup.find('div', attrs={'class':'col-md-6 col-xs-6 coinprice'})
