@@ -10,7 +10,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.ext import Updater
 from html import escape
 
-updater = Updater(token='550133015:AAHlnT6Ho_XqEBNzF59TeLqaqbAutgOAHgU')
+updater = Updater(token='BOT_TOKEN')
 dispatcher = updater.dispatcher
 
 import logging
